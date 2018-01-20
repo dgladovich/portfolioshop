@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('filter-categories', {
+    return queryInterface.createTable('shop_filter_categories', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -25,6 +25,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('filter-categories');
+    return queryInterface.dropTable('shop_filter_categories');
   }
 };

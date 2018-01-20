@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var product_comment = sequelize.define('shop_product_comment', {
+  var product_comment = sequelize.define('ProductComment', {
     title: DataTypes.STRING,
     description: DataTypes.TEXT,
     user: DataTypes.INTEGER,
@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
       associate: function(models) {
         // associations can be defined here
       }
-    }
+    },
+      tableName: 'shop_product_comments'
   });
   return product_comment;
 };

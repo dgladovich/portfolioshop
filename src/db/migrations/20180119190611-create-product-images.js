@@ -34,6 +34,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('product_images');
+    return queryInterface.dropTable('shop_product_images');
   }
 };

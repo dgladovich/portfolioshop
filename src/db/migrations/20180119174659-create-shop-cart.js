@@ -18,7 +18,7 @@ module.exports = {
         type: Sequelize.DATE
       },
       status: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

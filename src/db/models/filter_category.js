@@ -1,15 +1,15 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    var delivery = sequelize.define('Delivery', {
-        name: DataTypes.STRING,
-        title: DataTypes.VARCHAR
+    var filterCategory = sequelize.define('filter-category', {
+        category_id: DataTypes.INTEGER,
+        filter_id: DataTypes.INTEGER
     }, {
         classMethods: {
             associate: function (models) {
                 // associations can be defined here
             }
         },
-        tableName: 'shop_deliveries'
+        tableName: 'shop_filter_categories'
     });
-    return delivery;
+    return filterCategory;
 };

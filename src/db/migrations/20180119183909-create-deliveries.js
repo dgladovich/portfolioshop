@@ -22,6 +22,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('deliveries');
+    return queryInterface.dropTable('shop_deliveries');
   }
 };

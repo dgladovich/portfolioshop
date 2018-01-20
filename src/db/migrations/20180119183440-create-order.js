@@ -18,16 +18,16 @@ module.exports = {
         type: Sequelize.DATE
       },
       address: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING
       },
       delivery_service: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING
       },
       payment: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING
       },
       status: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING
       },
       total_price: {
         type: Sequelize.FLOAT
@@ -43,6 +43,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('orders');
+    return queryInterface.dropTable('shop_orders');
   }
 };

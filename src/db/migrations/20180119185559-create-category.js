@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       title: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING
       },
       view_title: {
         type: Sequelize.STRING
@@ -34,6 +34,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('categories');
+    return queryInterface.dropTable('shop_categories');
   }
 };

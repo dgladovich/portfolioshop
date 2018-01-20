@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       name: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.TEXT
       },
       createdAt: {
         allowNull: false,
@@ -25,6 +25,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('product_filters');
+    return queryInterface.dropTable('shop_product_filters');
   }
 };

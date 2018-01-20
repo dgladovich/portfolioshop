@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.DATE
       },
       status: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -34,6 +34,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('product_wishes');
+    return queryInterface.dropTable('shop_product_wishes');
   }
 };

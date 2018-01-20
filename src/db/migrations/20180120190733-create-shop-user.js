@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       email: {
-        type: Sequelize.VARCHAR
+        type: Sequelize.TEXT
       },
       active: {
         type: Sequelize.INTEGER

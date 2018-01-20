@@ -37,6 +37,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('product_comments');
+    return queryInterface.dropTable('shop_product_comments');
   }
 };
