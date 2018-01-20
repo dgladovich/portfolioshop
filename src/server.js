@@ -26,6 +26,7 @@ import createFetch from './createFetch';
 import passport from './passport';
 import router from './router';
 import models from './data/models';
+import db from './db/models';
 import schema from './data/schema';
 import assets from './assets.json'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
@@ -213,13 +214,19 @@ app.use((err, req, res, next) => {
 //
 // Launch the server
 // -----------------------------------------------------------------------------
-const promise = models.sync().catch(err => console.error(err.stack));
+//const promise = models.sync().catch(err => console.error(err.stack));
+const DB = db.sequelize.sync().catch(err => console.error(err.stack));
+
 if (!module.hot) {
-  promise.then(() => {
+    DB.then(()=>{
+        console.log('my sequelize db installed successfully')
+        DB.User
+    });
+  /*promise.then(() => {
     app.listen(config.port, () => {
       console.info(`The server is running at http://localhost:${config.port}/`);
     });
-  });
+  });*/
 }
 
 //
