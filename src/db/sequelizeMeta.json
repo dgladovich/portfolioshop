@@ -1,0 +1,12 @@
+[
+  "20180119183715-create-order-products.js",
+  "20180119183909-create-deliveries.js",
+  "20180119184850-create-product.js",
+  "20180119185148-create-product-comment.js",
+  "20180119185942-create-visit.js",
+  "20180119190243-create-product-visit.js",
+  "20180119190459-create-product-rating.js",
+  "20180119190611-create-product-images.js",
+  "20180119201855-create-filter-category.js",
+  "20180119202221-create-wish.js"
+]
