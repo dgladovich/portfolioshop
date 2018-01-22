@@ -4,10 +4,10 @@ module.exports = (sequelize, DataTypes) => {
     user_id: DataTypes.INTEGER,
     created_at: DataTypes.DATE,
     delivey_date: DataTypes.DATE,
-    address: DataTypes.VARCHAR,
-    delivery_service: DataTypes.VARCHAR,
-    payment: DataTypes.VARCHAR,
-    status: DataTypes.VARCHAR,
+    address: DataTypes.STRING,
+    delivery_service: DataTypes.STRING,
+    payment: DataTypes.STRING,
+    status: DataTypes.STRING,
     total_price: DataTypes.FLOAT
   }, {
     classMethods: {

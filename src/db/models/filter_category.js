@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-    var filterCategory = sequelize.define('filter-category', {
+    var filterCategory = sequelize.define('FilterCategory', {
         category_id: DataTypes.INTEGER,
         filter_id: DataTypes.INTEGER
     }, {

@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         product_id: DataTypes.INTEGER,
         created_at: DataTypes.DATE,
         updated_at: DataTypes.DATE,
-        status: DataTypes.VARCHAR
+        status: DataTypes.STRING
     }, {
         classMethods: {
             associate: function (models) {

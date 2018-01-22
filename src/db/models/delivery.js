@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
     var delivery = sequelize.define('Delivery', {
         name: DataTypes.STRING,
-        title: DataTypes.VARCHAR
+        title: DataTypes.STRING
     }, {
         classMethods: {
             associate: function (models) {

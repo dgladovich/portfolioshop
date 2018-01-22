@@ -214,15 +214,17 @@ app.use((err, req, res, next) => {
 //
 // Launch the server
 // -----------------------------------------------------------------------------
-//const promise = models.sync().catch(err => console.error(err.stack));
+const promise = models.sync().catch(err => console.error(err.stack));
 const DB = db.sequelize.sync().catch(err => console.error(err.stack));
 
 if (!module.hot) {
     DB.then(()=>{
         console.log('my sequelize db installed successfully')
-        DB.User
+        app.listen(config.port, () => {
+            console.info(`The server is running at http://localhost:${config.port}/`);
+        });
     });
-  /*promise.then(() => {
+/*  promise.then(() => {
     app.listen(config.port, () => {
       console.info(`The server is running at http://localhost:${config.port}/`);
     });

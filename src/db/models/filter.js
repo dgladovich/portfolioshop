@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
     var filter = sequelize.define('Filter', {
-        name: DataTypes.VARCHAR,
+        name: DataTypes.STRING,
         title: DataTypes.STRING
     }, {
         classMethods: {

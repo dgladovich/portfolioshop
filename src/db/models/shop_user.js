@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
     var shop_user = sequelize.define('User', {
         name: DataTypes.STRING,
         age: DataTypes.INTEGER,
-        email: DataTypes.VARCHAR,
+        email: DataTypes.STRING,
         active: DataTypes.INTEGER
     }, {
         classMethods: {

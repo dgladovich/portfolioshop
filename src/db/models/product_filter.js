@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
     var product_filter = sequelize.define('ProductFilter', {
         title: DataTypes.STRING,
-        name: DataTypes.VARCHAR
+        name: DataTypes.STRING
     }, {
         classMethods: {
             associate: function (models) {

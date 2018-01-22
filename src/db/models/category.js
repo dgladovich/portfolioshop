@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
     var category = sequelize.define('Category', {
-        title: DataTypes.VARCHAR,
+        title: DataTypes.STRING,
         view_title: DataTypes.STRING,
         image: DataTypes.STRING,
         created_at: DataTypes.DATE,
